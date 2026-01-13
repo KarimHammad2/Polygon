@@ -230,7 +230,7 @@ export default function Home() {
   const confirmDisabled =
     !draftArea ||
     !formState.name.trim() ||
-    (formState.image && !formState.consent);
+    (!!formState.image && !formState.consent);
 
   return (
     <main className="mx-auto flex min-h-screen max-w-6xl flex-col gap-4 px-4 py-4 lg:flex-row">
